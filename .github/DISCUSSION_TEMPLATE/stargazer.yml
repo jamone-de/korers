@@ -1,0 +1,97 @@
+title: "Stargazer Introduction"
+labels:
+  - stargazer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to the Korers Stargazer Community
+
+        You starred the repository. That means something.
+
+        This is not a support forum and not a feature request tracker.
+        This is the place where the first 1,000 people who believe in Korers introduce themselves.
+
+        Tell us who you are and why you are here.
+        We read every single one.
+
+  - type: input
+    id: name
+    attributes:
+      label: Your Name or Handle
+      description: How should we call you?
+      placeholder: Jane / j.doe / anonymous is fine too
+    validations:
+      required: true
+
+  - type: dropdown
+    id: background
+    attributes:
+      label: Your Background
+      description: What best describes you?
+      options:
+        - Security Researcher
+        - IT Administrator
+        - DevSecOps Engineer
+        - Software Developer
+        - CISO / Security Lead
+        - Team Lead / Manager
+        - Student / Learning
+        - Individual User
+        - Journalist / Analyst
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-korers
+    attributes:
+      label: Why Korers?
+      description: What brought you here? What problem are you trying to solve?
+      placeholder: "I found Korers because... What matters most to me is... My current situation is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Your Environment
+      description: Tell us about your setup. Personal use, team, organization? What platforms?
+      placeholder: "I work in a team of... We currently use... Our main platforms are..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: interest
+    attributes:
+      label: Primary Interest
+      description: What are you most interested in?
+      options:
+        - Testing and giving feedback
+        - Contributing code
+        - Security audit
+        - Enterprise evaluation
+        - Personal use
+        - Following the project
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Before you go
+      options:
+        - label: I have starred the repository
+          required: true
+        - label: I understand Korers is in development and has no public code yet
+          required: true
+        - label: I am here because I am genuinely interested, not just collecting stars
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        Thanks for being here early.
+        Early believers shape what this becomes.
