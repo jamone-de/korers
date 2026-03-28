@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Early Access Request
+    url: https://github.com/jamone-de/korers/issues/new?template=early-access.yml
+    about: Apply for early access to Korers before the public Q3 2026 release.
