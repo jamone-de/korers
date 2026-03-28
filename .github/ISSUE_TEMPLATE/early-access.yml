@@ -1,7 +1,8 @@
 name: Early Access Request
 description: Apply for early access to Korers before the public Q3 2026 release. We review every application manually.
 title: "[Early Access] "
-labels: ["early-access"]
+labels:
+  - early-access
 assignees: jamone-de
 
 body:
