@@ -40,7 +40,7 @@ body:
     id: organization
     attributes:
       label: Organization or Project Name
-      description: If applying for a team or organization, provide the name. Individuals can write "Personal".
+      description: If applying for a team or organization, provide the name. Individuals can write Personal.
       placeholder: Acme GmbH / Personal
     validations:
       required: true
@@ -50,7 +50,7 @@ body:
     attributes:
       label: Team Size
       description: How many people would use Korers in your environment?
-      placeholder: e.g. 1 / 12 / 200
+      placeholder: e.g. 1 or 12 or 200
     validations:
       required: true
 
@@ -60,8 +60,8 @@ body:
       label: Current Password Management Setup
       description: What are you using today? What is broken or missing?
       placeholder: |
-        We currently use X. The main problems we face are Y and Z.
-        We evaluated alternatives but none solved our specific need for...
+        We currently use another tool. The main problems we face are...
+        We evaluated alternatives but none of them solved our specific need for...
     validations:
       required: true
 
@@ -112,7 +112,7 @@ body:
         - ISO 27001
         - SOC 2
         - HIPAA
-        - None
+        - Not applicable
     validations:
       required: true
 
@@ -124,7 +124,7 @@ body:
       placeholder: |
         Our threat model includes...
         We are particularly concerned about...
-        From a security perspective, what matters most to us is...
+        From a security perspective what matters most to us is...
     validations:
       required: false
 
@@ -144,4 +144,44 @@ body:
   - type: input
     id: timeline
     attributes:
-      label: When Do Yo
+      label: When Do You Need This?
+      description: Is there a specific deadline or project timeline driving your interest?
+      placeholder: e.g. No specific deadline / By end of Q2 2026 / Before our ISO audit in September
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: Preferred Contact
+      description: How should we reach you if approved? GitHub username is fine. Email or LinkedIn also accepted.
+      placeholder: GitHub username / email / LinkedIn
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand that this repository currently contains no source code. Code releases in Q3 2026.
+          required: true
+        - label: I understand that early access is selective and not guaranteed.
+          required: true
+        - label: I have starred this repository to signal my interest.
+          required: true
+        - label: I agree to provide honest feedback and report issues I encounter.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **What happens next:**
+
+        We review every application manually. If approved, we will contact you via your preferred contact method.
+        Response time is typically within 2 weeks.
+
+        Thank you for taking the time to apply properly.
+        That alone puts you ahead of most.
