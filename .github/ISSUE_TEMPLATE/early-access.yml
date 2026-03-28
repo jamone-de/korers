@@ -8,16 +8,7 @@ assignees: jamone-de
 body:
   - type: markdown
     attributes:
-      value: |
-        ## Early Access Application
-
-        Thank you for your interest in Korers.
-
-        We are selecting 1,000 individuals, teams, and organizations for early access before the public release in Q3 2026.
-        Every application is reviewed manually. We will contact you directly if your application is approved.
-
-        This is not a waitlist. It is a selection process.
-        Be specific. Generic answers will not be approved.
+      value: "## Early Access Application\n\nThank you for your interest in Korers.\n\nWe are selecting 1,000 individuals, teams, and organizations for early access before the public release in Q3 2026.\nEvery application is reviewed manually. We will contact you directly if your application is approved.\n\nThis is not a waitlist. It is a selection process.\nBe specific. Generic answers will not be approved."
 
   - type: dropdown
     id: applicant-type
@@ -59,9 +50,7 @@ body:
     attributes:
       label: Current Password Management Setup
       description: What are you using today? What is broken or missing?
-placeholder: |
-        We currently use another tool. The main problems we face are...
-        We evaluated alternatives but found no solution for our specific need for...
+      placeholder: "We currently use another tool. The main problems we face are... We evaluated alternatives but found no solution for our specific needs."
     validations:
       required: true
 
@@ -70,10 +59,7 @@ placeholder: |
     attributes:
       label: Primary Use Case
       description: Describe specifically how you would use Korers. The more concrete the better.
-      placeholder: |
-        We need Korers for...
-        Our specific requirements are...
-        The features most critical to us are...
+      placeholder: "We need Korers for... Our specific requirements are... The features most critical to us are..."
     validations:
       required: true
 
@@ -120,11 +106,8 @@ placeholder: |
     id: security-context
     attributes:
       label: Security Context
-      description: Describe your security posture and what matters most to you. Security researchers can describe their research area.
-      placeholder: |
-        Our threat model includes...
-        We are particularly concerned about...
-        From a security perspective what matters most to us is...
+      description: Describe your security posture and what matters most to you.
+      placeholder: "Our threat model includes... We are particularly concerned about... From a security perspective what matters most to us is..."
     validations:
       required: false
 
@@ -133,11 +116,7 @@ placeholder: |
     attributes:
       label: How You Plan to Contribute
       description: Early access is not just about getting software early. How will you help make Korers better?
-      placeholder: |
-        I plan to...
-        I can provide feedback on...
-        I am able to test...
-        I have expertise in...
+      placeholder: "I plan to... I can provide feedback on... I am able to test... I have expertise in..."
     validations:
       required: true
 
@@ -146,7 +125,7 @@ placeholder: |
     attributes:
       label: When Do You Need This?
       description: Is there a specific deadline or project timeline driving your interest?
-      placeholder: e.g. No specific deadline / By end of Q2 2026 / Before our ISO audit in September
+      placeholder: No specific deadline / By end of Q2 2026 / Before our ISO audit in September
     validations:
       required: false
 
@@ -175,13 +154,4 @@ placeholder: |
 
   - type: markdown
     attributes:
-      value: |
-        ---
-
-        **What happens next:**
-
-        We review every application manually. If approved, we will contact you via your preferred contact method.
-        Response time is typically within 2 weeks.
-
-        Thank you for taking the time to apply properly.
-        That alone puts you ahead of most.
+      value: "---\n\n**What happens next:**\n\nWe review every application manually. If approved, we will contact you via your preferred contact method.\nResponse time is typically within 2 weeks.\n\nThank you for taking the time to apply properly.\nThat alone puts you ahead of most."
