@@ -105,8 +105,9 @@ We are looking for:
 **How to apply:**
 
 1. Star this repository - this signals interest and reserves your place in the queue
-2. Open an Early Access Request via the Issues tab - fill out the template so we can understand your use case
-3. We review applications manually and reach out directly
+2. [Open an Early Access Request](https://github.com/jamone-de/korers/issues/new?template=early-access.yml) - fill out the template so we can understand your use case
+3. [Introduce yourself in Discussions](https://github.com/jamone-de/korers/discussions/new?category=stargazer-introductions) - tell the community who you are and why you are here
+4. We review applications manually and reach out directly
 
 We are not accepting everyone. We are looking for people who will actually use it and tell us what breaks.
 
