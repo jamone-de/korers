@@ -59,9 +59,9 @@ body:
     attributes:
       label: Current Password Management Setup
       description: What are you using today? What is broken or missing?
-      placeholder: |
+placeholder: |
         We currently use another tool. The main problems we face are...
-        We evaluated alternatives but none of them solved our specific need for...
+        We evaluated alternatives but found no solution for our specific need for...
     validations:
       required: true
 
