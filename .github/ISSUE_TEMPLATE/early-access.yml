@@ -50,7 +50,7 @@ body:
     attributes:
       label: Current Password Management Setup
       description: What are you using today? What is broken or missing?
-      placeholder: "We currently use another tool. The main problems we face are... We evaluated alternatives but found no solution for our specific needs."
+      placeholder: "We currently use another tool. The main problems we face are... We evaluated alternatives but could not find a solution for our specific needs."
     validations:
       required: true
 
