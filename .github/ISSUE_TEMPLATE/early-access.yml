@@ -1,0 +1,146 @@
+name: Early Access Request
+description: Apply for early access to Korers before the public Q3 2026 release. We review every application manually.
+title: "[Early Access] "
+labels: ["early-access"]
+assignees: jamone-de
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Early Access Application
+
+        Thank you for your interest in Korers.
+
+        We are selecting 1,000 individuals, teams, and organizations for early access before the public release in Q3 2026.
+        Every application is reviewed manually. We will contact you directly if your application is approved.
+
+        This is not a waitlist. It is a selection process.
+        Be specific. Generic answers will not be approved.
+
+  - type: dropdown
+    id: applicant-type
+    attributes:
+      label: Applicant Type
+      description: What best describes you or your organization?
+      options:
+        - Individual / Personal Use
+        - Small Team (2 to 10 people)
+        - Mid-size Organization (11 to 100 people)
+        - Enterprise (100+ people)
+        - Security Researcher
+        - IT Administrator / DevSecOps
+        - Developer / Open Source Contributor
+        - Journalist / Analyst
+    validations:
+      required: true
+
+  - type: input
+    id: organization
+    attributes:
+      label: Organization or Project Name
+      description: If applying for a team or organization, provide the name. Individuals can write "Personal".
+      placeholder: Acme GmbH / Personal
+    validations:
+      required: true
+
+  - type: input
+    id: team-size
+    attributes:
+      label: Team Size
+      description: How many people would use Korers in your environment?
+      placeholder: e.g. 1 / 12 / 200
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-solution
+    attributes:
+      label: Current Password Management Setup
+      description: What are you using today? What is broken or missing?
+      placeholder: |
+        We currently use X. The main problems we face are Y and Z.
+        We evaluated alternatives but none solved our specific need for...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Primary Use Case
+      description: Describe specifically how you would use Korers. The more concrete the better.
+      placeholder: |
+        We need Korers for...
+        Our specific requirements are...
+        The features most critical to us are...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: relevant-features
+    attributes:
+      label: Features Relevant to Your Use Case
+      description: Select everything that applies to your environment.
+      options:
+        - label: Offline-first / no cloud dependency
+        - label: SSO integration (OIDC or SAML)
+        - label: SCIM provisioning
+        - label: RBAC and team permissions
+        - label: Audit log and compliance
+        - label: Offboarding automation
+        - label: Duress Mode
+        - label: Travel Mode
+        - label: Browser extension
+        - label: Mobile app
+        - label: On-premise IdP (Keycloak or similar)
+        - label: GDPR / NIS2 / BSI compliance requirements
+        - label: Shadow IT detection
+        - label: Blast Radius risk scoring
+        - label: Open source auditability
+
+  - type: dropdown
+    id: compliance
+    attributes:
+      label: Compliance Requirements
+      description: Are you subject to any of the following?
+      multiple: true
+      options:
+        - GDPR
+        - NIS2
+        - BSI Grundschutz
+        - ISO 27001
+        - SOC 2
+        - HIPAA
+        - None
+    validations:
+      required: true
+
+  - type: textarea
+    id: security-context
+    attributes:
+      label: Security Context
+      description: Describe your security posture and what matters most to you. Security researchers can describe their research area.
+      placeholder: |
+        Our threat model includes...
+        We are particularly concerned about...
+        From a security perspective, what matters most to us is...
+    validations:
+      required: false
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: How You Plan to Contribute
+      description: Early access is not just about getting software early. How will you help make Korers better?
+      placeholder: |
+        I plan to...
+        I can provide feedback on...
+        I am able to test...
+        I have expertise in...
+    validations:
+      required: true
+
+  - type: input
+    id: timeline
+    attributes:
+      label: When Do Yo
